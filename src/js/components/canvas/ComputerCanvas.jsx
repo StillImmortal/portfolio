@@ -1,4 +1,4 @@
-import React from "react";
+import React, {useState, useEffect} from "react";
 import { Suspense } from "react";
 import { Canvas } from "@react-three/fiber";
 import { OrbitControls, Preload, useGLTF } from "@react-three/drei";
@@ -24,7 +24,7 @@ function Computer({isMobile}) {
         <primitive
           object={computer.scene}
           scale={isMobile ? 0.7 : 0.75}
-          position={isMobile ? [0, -3, -2.2] : [0, -2.85, -1.5]}
+          position={isMobile ? [0, -3, -2.2] : [0, -2.95, -1.5]}
           rotation={[-0.01, -0.2, -0.1]}
         />
       </mesh>
@@ -32,6 +32,24 @@ function Computer({isMobile}) {
 }
 
 export default function ComputerCanvas() {
+    const [isMobile, setIsMobile] = useState(false);
+
+    useEffect(() => {
+      const mediaQuery = window.matchMedia("(max-width: 500px)");
+
+      setIsMobile(mediaQuery.matches);
+
+      const handleMediaQueryChange = (event) => {
+        setIsMobile(event.matches);
+      };
+  
+      mediaQuery.addEventListener("change", handleMediaQueryChange);
+  
+      return () => {
+        mediaQuery.removeEventListener("change", handleMediaQueryChange);
+      };
+    }, []);
+
     return (
         <Canvas
             frameloop="demand"
@@ -45,7 +63,7 @@ export default function ComputerCanvas() {
                     maxPolarAngle={Math.PI / 2}
                     minPolarAngle={Math.PI / 2}
                 />
-                <Computer />
+                <Computer isMobile={isMobile} />
             </Suspense>
         </Canvas>
     )

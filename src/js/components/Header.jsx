@@ -4,8 +4,8 @@ import { NavLink } from "react-router-dom";
 // Logo
 import logo from "../../assets/logo-image.svg"
 
-// Styles
-import "../../scss/components/header.scss"
+// Menu-icon
+import menu from "../../assets/menu.svg"
 
 export default function Header() {
     return (
@@ -20,6 +20,9 @@ export default function Header() {
                     <li className="header__list-item"><NavLink to="/" className="header__link nav-link">Work</NavLink></li>
                     <li className="header__list-item"><NavLink to="/" className="header__link nav-link">Contact</NavLink></li>
                 </ul>
+                <div className="header__menu-container">
+                    <img src={menu} className="header__menu-icon" />
+                </div>
             </nav>
         </header>
     )

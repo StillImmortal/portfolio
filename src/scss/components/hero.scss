@@ -1,6 +1,6 @@
 // Page
 .hero {
-    background-image: url("../../assets/herobg.png");
+    background-image: url("../assets/herobg.png");
     background-position: center;
     background-repeat: no-repeat;
     background-size: cover;
@@ -17,7 +17,7 @@
         max-width: 1280px;
         width: 100%;
         position: absolute;
-        top: 180px;
+        top: 160px;
         display: flex;
         flex-direction: row;
         padding-inline: 2em;
@@ -68,5 +68,41 @@
 
     &__subtitle {
         font-size: 1.5rem;
+    }
+
+    &__toggler-container {
+        position: absolute;
+        bottom: 32px;
+        width: 100%;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+    }
+
+    &__toggler {
+        width: 35px;
+        height: 64px;
+        border-radius: 1.5rem;
+        border: 3px solid #aaa6c3;
+        display: flex;
+        justify-content: center;
+        align-items: flex-start;
+        padding: 8px;
+    }
+
+    &__toggler-circle {
+        width: 12px;
+        height: 12px;
+        border-radius: 100%;
+        background-color: #aaa6c3;
+    }
+}
+
+@include media-breakpoint-down(sm) {
+    .hero {
+        &__title {
+            font-size: 2.5rem;
+            font-weight: 800;
+        }
     }
 }

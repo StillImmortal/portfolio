@@ -1,9 +1,6 @@
 import React from "react";
 import { motion } from "framer-motion"
 
-// Styles
-import "../../scss/components/hero.scss"
-
 // Components
 import ComputerCanvas from "./canvas/ComputerCanvas.jsx";
 
@@ -26,6 +23,26 @@ export default function Hero() {
             </div>
             
             <ComputerCanvas />
+
+            <div className="hero__toggler-container">
+                <a href="#about">
+                    <div className="hero__toggler">
+                        <motion.dev
+                            animate={{
+                                y: [0, 30, 0]
+                            }}
+                            transition={{
+                                duration: 2,
+                                repeat: Infinity,
+                                repeatType: "loop"
+                            }}
+                            className="hero__toggler-circle"
+                        >
+
+                        </motion.dev>
+                    </div>
+                </a>
+            </div>
         </section>
     )
 }
