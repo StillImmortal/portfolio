@@ -65,6 +65,8 @@ export default function ComputerCanvas() {
                 />
                 <Computer isMobile={isMobile} />
             </Suspense>
+
+            <Preload all />
         </Canvas>
     )
 }

@@ -21,7 +21,7 @@ export default function Hero() {
                     </p>
                 </div>
             </div>
-            
+                
             <ComputerCanvas />
 
             <div className="hero__toggler-container">
@@ -38,7 +38,6 @@ export default function Hero() {
                             }}
                             className="hero__toggler-circle"
                         >
-
                         </motion.dev>
                     </div>
                 </a>

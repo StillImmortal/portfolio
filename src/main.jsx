@@ -5,8 +5,8 @@ import { RouterProvider, createBrowserRouter, createRoutesFromElements, Route } 
 // Utility
 import "./js/Utility.jsx"
 
-// Styles css
-import "./scss/index.scss"
+// Styles
+import "./index.css";
 
 //Pages and Components
 import App from './js/App.jsx';

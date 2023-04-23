@@ -3,14 +3,16 @@ import React from "react";
 // Components
 import Header from "./components/Header.jsx";
 import Hero from "./components/Hero.jsx";
+import About from "./components/About.jsx";
 
 export default function App() {
     return (
-        <div className="site-wrapper">
+        <div className="bg-tertiary">
             <Header />
-            <main>
+            {/* <main>
                 <Hero />
-            </main>
+                <About />
+            </main> */}
         </div>
     )
 }
