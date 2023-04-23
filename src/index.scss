@@ -13,6 +13,13 @@
   color-scheme: dark;
 }
 
+html,
+body {
+  overflow-x: hidden;
+  -ms-overflow-style: none;
+  scrollbar-width: none;
+}
+
 .hash-span {
   margin-top: -100px;
   padding-bottom: 100px;
@@ -23,6 +30,24 @@
     background-image: linear-gradient(rgb(178, 49, 230), rgb(112, 242, 229));
     -webkit-background-clip: text;
     -webkit-text-fill-color: transparent;
+}
+
+.text-link {
+  color: rgba(255, 255, 255, 0.75);
+
+  &:hover,
+  &:focus {
+    color: white;
+  }
+}
+
+#header {
+  transition: transform 0.3s linear;
+  transition-delay: 0.2s;
+}
+
+.hide {
+  transform: translateY(-85px);
 }
 
 .black-gradient {

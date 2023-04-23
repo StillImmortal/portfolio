@@ -7,12 +7,12 @@ import About from "./components/About.jsx";
 
 export default function App() {
     return (
-        <div className="bg-tertiary">
-            <Header />
-            {/* <main>
+        <div className="relative z-0 bg-primary">
+             <div className='bg-hero-pattern bg-cover bg-no-repeat bg-center'>
+                <Header />
                 <Hero />
-                <About />
-            </main> */}
+            </div>
+            <About />
         </div>
     )
 }

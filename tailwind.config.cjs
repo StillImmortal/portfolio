@@ -21,6 +21,8 @@ module.exports = {
       },
       backgroundImage: {
         "hero-pattern": "url('/src/assets/herobg.png')",
+        "menu-open": "url('/src/assets/menu.svg')",
+        "menu-close": "url('/src/assets/close.svg')"
       },
     },
     plugins: [],
