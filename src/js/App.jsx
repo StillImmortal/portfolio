@@ -4,6 +4,8 @@ import React from "react";
 import Header from "./components/Header.jsx";
 import Hero from "./components/Hero.jsx";
 import About from "./components/About.jsx";
+import Experience from "./components/Experience.jsx";
+import Tech from "./components/Tech.jsx";
 
 export default function App() {
     return (
@@ -13,6 +15,8 @@ export default function App() {
                 <Hero />
             </div>
             <About />
+            <Experience />
+            <Tech />
         </div>
     )
 }

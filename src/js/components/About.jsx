@@ -3,14 +3,14 @@ import { Tilt } from "react-tilt";
 import { motion } from "framer-motion"
 
 // HOC
-import StartWrapper from "../HOC.jsx";
+import HOC from "../HOC.jsx";
 
 // Constants
 import { services } from "../../constants/constants";
-import { fadeIn, textVariant } from "../../utils/motion";
 
 // Styles
 import { styles } from "../../styles/styles.js";
+import { fadeIn, textVariant } from "../../utils/motion";
 
 
 function ServiceCard({index, title, icon}) {
@@ -72,4 +72,4 @@ function About() {
     )
 }
 
-export default StartWrapper(About, "about")
+export default HOC(About, "about")
