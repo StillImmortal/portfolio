@@ -6,6 +6,8 @@ import Hero from "./components/Hero.jsx";
 import About from "./components/About.jsx";
 import Experience from "./components/Experience.jsx";
 import Tech from "./components/Tech.jsx";
+import Works from "./components/Works.jsx";
+import Feedback from "./components/Feedback.jsx";
 
 export default function App() {
     return (
@@ -17,6 +19,8 @@ export default function App() {
             <About />
             <Experience />
             <Tech />
+            <Works />
+            <Feedback />
         </div>
     )
 }
