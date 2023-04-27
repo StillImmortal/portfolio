@@ -46,8 +46,16 @@ body {
   transition-delay: 0.2s;
 }
 
+#md-navbar {
+  transition: transform 0.3s linear;
+}
+
 .hide {
   transform: translateY(-85px);
+}
+
+.hide-navbar {
+  transform: translateX(100%);
 }
 
 .black-gradient {

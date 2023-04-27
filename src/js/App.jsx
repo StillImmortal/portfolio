@@ -8,6 +8,8 @@ import Experience from "./components/Experience.jsx";
 import Tech from "./components/Tech.jsx";
 import Works from "./components/Works.jsx";
 import Feedback from "./components/Feedback.jsx";
+import Contact from "./components/Contact.jsx";
+import StarsCanvas from "./components/canvas/StartsCanvas.jsx";
 
 export default function App() {
     return (
@@ -22,7 +24,8 @@ export default function App() {
             <Works />
             <Feedback />
             <div className="relative z-0">
-                
+                <Contact />
+                <StarsCanvas />
             </div>
         </div>
     )
