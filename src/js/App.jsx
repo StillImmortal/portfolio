@@ -21,6 +21,9 @@ export default function App() {
             <Tech />
             <Works />
             <Feedback />
+            <div className="relative z-0">
+                
+            </div>
         </div>
     )
 }
