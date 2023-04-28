@@ -12,10 +12,6 @@ import { slideIn } from "../../utils/motion";
 // HOC
 import HOC from "../HOC";
 
-// service_07xfneo
-// template_p06mked
-// eqvl85mvSkWSOQxEN
-
 function Contact() {
     const formRef = useRef()
     const [form, setForm] = useState({
