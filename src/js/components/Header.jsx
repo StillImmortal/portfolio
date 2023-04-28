@@ -44,7 +44,7 @@ export default function Header() {
         <div id="md-navbar" style={{transitionDelay: `${state.isMenuOpenImage && state.headerType == "hide" ? "0.15s" : ""}`}} className={`md:hidden z-50 fixed w-[40vw] small-navbar top-[76px] left-[100%] rounded-bl-2xl rounded-tl-2xl border-4 border-header bg-tertiary ${state.isMenuOpenImage ? "" :"translate-x-[-100%]"}`}>
             <ul className="flex flex-col gap-5 p-5">
                 {navLinks.map((link, index) => (
-                    <li key={`link-${link.id}`} className="border-b-2 border-secondary"><a href={`#${link.id}`} className="text-link text-[20px] font-bold" onClick={toggleMenu}>{link.title}</a></li>
+                    <li key={`link-${link.id}`} className="border-b-2 border-secondary"><a href={`#${link.id}`} className="w-full inline-block text-link text-[20px] font-bold" onClick={toggleMenu}>{link.title}</a></li>
                 ))}
             </ul>
         </div>
